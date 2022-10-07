@@ -1,4 +1,4 @@
-const FootballPlayerModule = (() => {
+const footballplayermodule = (() => {
   const footballPlayers = [
     {
       name: "Erling Haaland",
@@ -90,5 +90,5 @@ const FootballPlayerModule = (() => {
   };
 })();
 
-export default FootballPlayerModule;
+export default footballplayermodule;
 //

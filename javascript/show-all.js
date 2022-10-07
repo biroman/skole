@@ -1,4 +1,4 @@
-import FootballPlayerModule from "/FootBallPlayerModule.js";
+import footballplayermodule from "./FootballPlayerModule";
 const showAllGrid = document.querySelector("#grid-show-all");
 const showAllBtn = document.querySelector("#show-all-btn");
 const darkModeBtn = document.querySelector("#dark-mode-btn");
