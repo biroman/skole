@@ -33,6 +33,7 @@ const footballplayermodule = (() => {
   const players = "players";
 
   const getAll = () => {
+    console.log("Works");
     return checkIfArrayExists();
   };
 
