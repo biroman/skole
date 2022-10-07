@@ -66,8 +66,8 @@ showAllBtn.addEventListener("click", () => showAllPlayers(footballplayermodule.g
 
 darkModeBtn.addEventListener("click", () => darkMode());
 
-clearLocalStorageBtn.addEventListener("click", () => FootballPlayerModule.removePlayers());
+clearLocalStorageBtn.addEventListener("click", () => footballplayermodule.removePlayers());
 
 (() => {
-  FootballPlayerModule.checkIfArrayExists();
+  footballplayermodule.checkIfArrayExists();
 })();
