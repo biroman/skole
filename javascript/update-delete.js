@@ -50,7 +50,7 @@ const updateGame = () => {
 findPlayerBtn.addEventListener("click", getPlayerByName);
 updatePlayerBtn.addEventListener("click", () => updateGame());
 
-//Legger automatisk til alle navnene som ligger i localstorage inn i dropdown menyen.
+//Legger automatisk til alle navnene som ligger i localstorage inn i dropdown menyen.//
 (() => {
   const arrayInLocalStorage = JSON.parse(localStorage.getItem("players"));
   const arrayForPlayers = arrayInLocalStorage;
