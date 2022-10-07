@@ -4,7 +4,7 @@ const showAllBtn = document.querySelector("#show-all-btn");
 const darkModeBtn = document.querySelector("#dark-mode-btn");
 const bodyDarkMode = document.querySelector("body");
 const modalWindow = document.querySelector("#modalWindow");
-const clearLocalStorageBtn = document.querySelector("#clear-local-storage-btn");
+const clearlocalStorageBtn = document.querySelector("#clear-local-storage-btn");
 
 let btnShowAllToggle = false;
 let btnDarkmodeToggle = true;
@@ -66,7 +66,7 @@ showAllBtn.addEventListener("click", () => showAllPlayers(footballplayermodule.g
 
 darkModeBtn.addEventListener("click", () => darkMode());
 
-clearLocalStorageBtn.addEventListener("click", () => footballplayermodule.removePlayers());
+clearlocalStorageBtn.addEventListener("click", () => footballplayermodule.removePlayers());
 
 (() => {
   footballplayermodule.checkIfArrayExists();

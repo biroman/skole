@@ -50,10 +50,10 @@ const updateGame = () => {
 findPlayerBtn.addEventListener("click", getPlayerByName);
 updatePlayerBtn.addEventListener("click", () => updateGame());
 
-//Legger automatisk til alle navnene som ligger i localstorage inn i dropdown menyen.//
+//Legger automatisk til alle navnene som ligger i window.localStorage inn i dropdown menyen.//
 (() => {
-  const arrayInLocalStorage = JSON.parse(localStorage.getItem("players"));
-  const arrayForPlayers = arrayInLocalStorage;
+  const arrayInlocalStorage = JSON.parse(window.localStorage.getItem("players"));
+  const arrayForPlayers = arrayInlocalStorage;
   for (let i = 0; i < arrayForPlayers.length; i++) {
     const playerName = Object.values(arrayForPlayers)[i].name;
     playerNameInput.innerHTML += `<option value="${playerName}">${playerName}</option>`;

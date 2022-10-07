@@ -42,8 +42,8 @@ const footballplayermodule = (() => {
   };
 
   const removePlayers = () => {
-    if (localStorage.getItem("players")) {
-      localStorage.removeItem("players");
+    if (window.localStorage.getItem("players")) {
+      window.localStorage.removeItem("players");
       alert("Successfully cleared the local storage!");
       window.location.reload();
     } else {
@@ -54,18 +54,18 @@ const footballplayermodule = (() => {
   const addPlayer = (newPlayer) => {
     const playerArray = checkIfArrayExists();
     playerArray.push(newPlayer);
-    localStorage.setItem(players, JSON.stringify(playerArray));
+    window.localStorage.setItem(players, JSON.stringify(playerArray));
   };
 
   const checkIfArrayExists = () => {
     let localStoragePlayers = footballPlayers;
 
-    if (localStorage.getItem(players) != null) {
-      const playerArray = JSON.parse(localStorage.getItem(players));
+    if (window.localStorage.getItem(players) != null) {
+      const playerArray = JSON.parse(window.localStorage.getItem(players));
       return playerArray;
     } else {
       let stringifiedArray = JSON.stringify(localStoragePlayers); //Gjør array om til plane tekst
-      const test = localStorage.setItem("players", stringifiedArray);
+      const test = window.localStorage.setItem("players", stringifiedArray);
       return test; //Setter den teksten inn i local storage
     }
   };
@@ -77,7 +77,7 @@ const footballplayermodule = (() => {
     playerToUpdate.height = height;
     playerToUpdate.club = club;
     playerToUpdate.image = image;
-    localStorage.setItem(players, JSON.stringify(playerArray));
+    window.localStorage.setItem(players, JSON.stringify(playerArray));
   };
 
   return {
