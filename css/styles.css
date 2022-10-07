@@ -1,0 +1,12 @@
+.col {
+  opacity: 0.7;
+}
+
+.col:hover {
+  opacity: 1;
+}
+
+#player-img-added {
+  width: 20%;
+  height: 10%;
+}

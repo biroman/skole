@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football players</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/258de9725b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script defer type="module" src="/javascript/show-all.js"></script>
+  </head>
+  <body class="bg-dark text-white">
+    <div class="container">
+      <header>
+        <h1 class="display-5">Football players</h1>
+      </header>
+      <nav class="mb-5">
+        <a class="btn btn-primary" href="show-all.html" role="button"><i class="fa-solid fa-house"></i> "Show all" page</a>
+        <a class="btn btn-success" href="search.html" role="button"><i class="fa-solid fa-magnifying-glass"></i> "Search" page</a>
+        <a class="btn btn-success" href="create-new.html" role="button"><i class="fa-solid fa-plus"></i> "Save new" page</a>
+        <a class="btn btn-success" href="update-delete.html" role="button"><i class="fa-solid fa-pen-to-square"></i> "Update/Delete" page</a>
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#settingsModal"><i class="fa-solid fa-gear"></i> Pages customization</button>
+      </nav>
+
+      <main>
+        <button id="show-all-btn" type="button" class="btn btn-lg btn-primary mb-3"><i class="fa-regular fa-eye"></i> SHOW ALL PLAYERS</button>
+        <!-- Denne div'en som fotballspillerne blir printet ut til-->
+        <div id="grid-show-all" class="row"></div>
+      </main>
+    </div>
+
+    <!-- MODAL - Settings -->
+    <div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="settingsModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div id="modalWindow" class="modal-content bg-dark">
+          <div class="modal-header">
+            <h3 class="modal-title" id="settingsModalLabel">Settings</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body align-self-center">
+            <button id="dark-mode-btn" type="button" class="btn btn-light"><i class="fa-solid fa-circle-half-stroke"></i> Light mode</button>
+            <button id="clear-local-storage-btn" type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i> Reset local storage</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
