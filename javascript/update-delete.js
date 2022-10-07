@@ -1,4 +1,4 @@
-import footballplayermodule from "./footballplayermodule";
+import footballplayermodule from "./footballplayermodule.js";
 
 const playerNameInput = document.querySelector("#player-name-input");
 const playerNameOutput = document.querySelector("#player-name");
