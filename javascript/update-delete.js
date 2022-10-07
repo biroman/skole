@@ -1,4 +1,4 @@
-import footballplayermodule from "./FootballPlayerModule";
+import footballplayermodule from "./footballplayermodule";
 
 const playerNameInput = document.querySelector("#player-name-input");
 const playerNameOutput = document.querySelector("#player-name");
@@ -20,7 +20,7 @@ const getPlayerByName = () => {
   } else {
     playerNameInputText.innerHTML = "";
     const name = playerNameInput.value;
-    const player = FootballPlayerModule.getPlayerByName(name);
+    const player = footballplayermodule.getPlayerByName(name);
     playerNameOutput.value = player.name;
     playerAgeOutput.value = player.age;
     playerHeightOutput.value = player.height;
@@ -40,7 +40,7 @@ const updateGame = () => {
     const height = parseInt(playerHeightOutput.value);
     const club = playerClubOutput.value;
     const img = playerImgOutput.value;
-    FootballPlayerModule.updateTitle(name, age, height, club, img);
+    footballplayermodule.updateTitle(name, age, height, club, img);
     updatePlayerBtnText.innerHTML = `
     <p class="text-success">${name}, was updated!</p>
     `;

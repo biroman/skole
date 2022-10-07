@@ -1,4 +1,4 @@
-import footballplayermodule from "./FootballPlayerModule";
+import footballplayermodule from "./footballplayermodule";
 const showAllGrid = document.querySelector("#grid-show-all");
 const showAllBtn = document.querySelector("#show-all-btn");
 const darkModeBtn = document.querySelector("#dark-mode-btn");
@@ -62,7 +62,7 @@ const darkMode = () => {
   }
 };
 
-showAllBtn.addEventListener("click", () => showAllPlayers(FootballPlayerModule.getAll()));
+showAllBtn.addEventListener("click", () => showAllPlayers(footballplayermodule.getAll()));
 
 darkModeBtn.addEventListener("click", () => darkMode());
 

@@ -1,4 +1,4 @@
-import footballplayermodule from "./FootballPlayerModule";
+import footballplayermodule from "./footballplayermodule";
 
 const playerNameInput = document.querySelector("#player-name");
 const playerAgeInput = document.querySelector("#player-age");
@@ -20,7 +20,7 @@ const addNewPlayer = () => {
   if (name.length == 0 || playerAgeInput.value.length == 0 || playerHeightInput.value.length == 0 || club.length == 0) {
     addedPlayerOutput.innerHTML = `<p class="text-danger">You need to fill out all the forms!</p>`;
   } else {
-    FootballPlayerModule.addPlayer(newPlayer);
+    footballplayermodule.addPlayer(newPlayer);
     addedPlayerOutput.innerHTML = `
     <h5 class="text-success">You added:</h5>
     <img style="width: 10%" id="player-img-added" class="card-img-top text-center" src="./images/${image}"/>  
